@@ -1,14 +1,14 @@
 # tugaflixUnofficial
-Kodi Addon for TugaFlix - Unofficial
+Kodi Addon para TugaFlix - Não Oficial
 
 
-This addon is for the website tugaflix.com 
+Este addon foi feito para o site tugaflix.org 
 it´s a unofficial version and not supported or endorsed by the website.
 
 for now the addon supports;
 
- search movies and series
- auto subs (Pt Language only!)
- browse with categories
+ Procure por filmes e series
+ Legendas automaticas!!
+ Procures as Categorias
  
- hope you enjoy it!
+Espero que goste
