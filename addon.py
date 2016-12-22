@@ -23,7 +23,7 @@ h = HTMLParser.HTMLParser()
 
 
 addon_id = 'plugin.video.tugaflix'
-addon_version = '0.2.0'
+addon_version = '0.3.0'
 selfAddon = xbmcaddon.Addon(id=addon_id)
 addonfolder = selfAddon.getAddonInfo('path')
 artfolder = '/resources/img/'
@@ -34,60 +34,60 @@ artfolder = '/resources/img/'
 #MENUS############################################
 
 def CATEGORIES():
-    addDir('Filmes','http://tugaflix.com/Filmes',5,'http://www.ckfilms.com/wp-content/uploads/2013/09/clapper.png')
-    addDir('Series','http://tugaflix.com/Series',6,'http://img4.wikia.nocookie.net/__cb20100319190057/anythingforeveryone/images/4/43/Television_300x300_icon.png')
+    addDir('Filmes','http://tugaflix.org/Filmes',5,'http://www.ckfilms.com/wp-content/uploads/2013/09/clapper.png')
+    addDir('Series','http://tugaflix.org/Series',6,'http://img4.wikia.nocookie.net/__cb20100319190057/anythingforeveryone/images/4/43/Television_300x300_icon.png')
     addLink('','','',0,'')
-    addDir('Pesquisar Filmes','http://tugaflix.com/Filmes',7,'')
-    addDir('Pesquisar Series','http://tugaflix.com/Series',8,'')
+    addDir('Pesquisar Filmes','http://tugaflix.org/Filmes',7,'')
+    addDir('Pesquisar Series','http://tugaflix.org/Series',8,'')
     addLink('','','',0,'')
     addDir('TugaFlix Unofficial (Versão: '+addon_version+')','',0,'')
 
 
 def SUB_CAT_FILMES():
-    addDir ('Todos Filmes','http://tugaflix.com/Filmes',1,'http://www.ckfilms.com/wp-content/uploads/2013/09/clapper.png')
-    addDir ('Acção','http://tugaflix.com/Filmes?T=&G=Ac%C3%A7%C3%A3o&O=1',1,'')
-    addDir ('Animação','http://tugaflix.com/Filmes?T=&G=Anima%C3%A7%C3%A3o&O=1',1,'')
-    addDir ('Aventura','http://tugaflix.com/Filmes?T=&G=Aventura&O=1',1,'')
-    addDir ('Biografia','http://tugaflix.com/Filmes?T=&G=Biografia&O=1',1,'')
-    addDir ('Comédia','http://tugaflix.com/Filmes?T=&G=Com%C3%A9dia&O=1',1,'')
-    addDir ('Crime','http://tugaflix.com/Filmes?T=&G=Crime&O=1',1,'')
-    addDir ('Desporto','http://tugaflix.com/Filmes?T=&G=Desporto&O=1',1,'')
-    addDir ('Documentário','http://tugaflix.com/Filmes?T=&G=Document%C3%A1rio&O=1',1,'')
-    addDir ('Drama','http://tugaflix.com/Filmes?T=&G=Drama&O=1',1,'')
-    addDir ('Familiar','http://tugaflix.com/Filmes?T=&G=Familiar&O=1',1,'')
-    addDir ('Fantasia','http://tugaflix.com/Filmes?T=&G=Fantasia&O=1',1,'')
-    addDir ('SciFi','http://tugaflix.com/Filmes?T=&G=Fic%C3%A7%C3%A3o&O=1',1,'')
-    addDir ('Guerra','http://tugaflix.com/Filmes?T=&G=Guerra&O=1',1,'')
-    addDir ('História','http://tugaflix.com/Filmes?T=&G=Hist%C3%B3ria&O=1',1,'')
-    addDir ('Mistério','http://tugaflix.com/Filmes?T=&G=Mist%C3%A9rio&O=1',1,'')
-    addDir ('Música','http://tugaflix.com/Filmes?T=&G=M%C3%BAsica&O=1',1,'')
-    addDir ('Romance','http://tugaflix.com/Filmes?T=&G=Romance&O=1',1,'')
-    addDir ('Suspense','http://tugaflix.com/Filmes?T=&G=Suspense&O=1',1,'')
-    addDir ('Terror','http://tugaflix.com/Filmes?T=&G=Terror&O=1',1,'')
-    addDir ('Western','http://tugaflix.com/Filmes?T=&G=Western&O=1',1,'')
+    addDir ('Todos Filmes','http://tugaflix.org/Filmes',1,'http://www.ckfilms.com/wp-content/uploads/2013/09/clapper.png')
+    addDir ('Acção','http://tugaflix.org/Filmes?T=&G=Ac%C3%A7%C3%A3o&O=1',1,'')
+    addDir ('Animação','http://tugaflix.org/Filmes?T=&G=Anima%C3%A7%C3%A3o&O=1',1,'')
+    addDir ('Aventura','http://tugaflix.org/Filmes?T=&G=Aventura&O=1',1,'')
+    addDir ('Biografia','http://tugaflix.org/Filmes?T=&G=Biografia&O=1',1,'')
+    addDir ('Comédia','http://tugaflix.org/Filmes?T=&G=Com%C3%A9dia&O=1',1,'')
+    addDir ('Crime','http://tugaflix.org/Filmes?T=&G=Crime&O=1',1,'')
+    addDir ('Desporto','http://tugaflix.org/Filmes?T=&G=Desporto&O=1',1,'')
+    addDir ('Documentário','http://tugaflix.org/Filmes?T=&G=Document%C3%A1rio&O=1',1,'')
+    addDir ('Drama','http://tugaflix.org/Filmes?T=&G=Drama&O=1',1,'')
+    addDir ('Familiar','http://tugaflix.org/Filmes?T=&G=Familiar&O=1',1,'')
+    addDir ('Fantasia','http://tugaflix.org/Filmes?T=&G=Fantasia&O=1',1,'')
+    addDir ('SciFi','http://tugaflix.org/Filmes?T=&G=Fic%C3%A7%C3%A3o&O=1',1,'')
+    addDir ('Guerra','http://tugaflix.org/Filmes?T=&G=Guerra&O=1',1,'')
+    addDir ('História','http://tugaflix.org/Filmes?T=&G=Hist%C3%B3ria&O=1',1,'')
+    addDir ('Mistério','http://tugaflix.org/Filmes?T=&G=Mist%C3%A9rio&O=1',1,'')
+    addDir ('Música','http://tugaflix.org/Filmes?T=&G=M%C3%BAsica&O=1',1,'')
+    addDir ('Romance','http://tugaflix.org/Filmes?T=&G=Romance&O=1',1,'')
+    addDir ('Suspense','http://tugaflix.org/Filmes?T=&G=Suspense&O=1',1,'')
+    addDir ('Terror','http://tugaflix.org/Filmes?T=&G=Terror&O=1',1,'')
+    addDir ('Western','http://tugaflix.org/Filmes?T=&G=Western&O=1',1,'')
 
 def SUB_CAT_SERIES():
-    addDir ('Todas as Séries','http://tugaflix.com/Series',3,'http://www.ckfilms.com/wp-content/uploads/2013/09/clapper.png')
-    addDir ('Acção','http://tugaflix.com/Series?T=&G=Ac%C3%A7%C3%A3o&O=1',3,'')
-    addDir ('Animação','http://tugaflix.com/Series?T=&G=Anima%C3%A7%C3%A3o&O=1',3,'')
-    addDir ('Aventura','http://tugaflix.com/Series?T=&G=Aventura&O=1',3,'')
-    addDir ('Biografia','http://tugaflix.com/Series?T=&G=Biografia&O=1',3,'')
-    addDir ('Comédia','http://tugaflix.com/Series?T=&G=Com%C3%A9dia&O=1',3,'')
-    addDir ('Crime','http://tugaflix.com/Series?T=&G=Crime&O=Ad icionado',3,'')
-    addDir ('Desporto','http://tugaflix.com/Series?T=&G=Desporto&O=1',3,'')
-    addDir ('Documentário','http://tugaflix.com/Series?T=&G=Document%C3%A1rio&O=1',3,'')
-    addDir ('Drama','http://tugaflix.com/Series?T=&G=Drama&O=1',3,'')
-    addDir ('Familiar','http://tugaflix.com/Series?T=&G=Familiar&O=1',3,'')
-    addDir ('Fantasia','http://tugaflix.com/Series?T=&G=Fantasia&O=1',3,'')
-    addDir ('SciFi','http://tugaflix.com/Series?T=&G=Fic%C3%A7%C3%A3o&O=1',3,'')
-    addDir ('Guerra','http://tugaflix.com/Series?T=&G=Guerra&O=1',3,'')
-    addDir ('História','http://tugaflix.com/Series?T=&G=Hist%C3%B3ria&O=1',3,'')
-    addDir ('Mistério','http://tugaflix.com/Series?T=&G=Mist%C3%A9rio&O=1',3,'')
-    addDir ('Música','http://tugaflix.com/Series?T=&G=M%C3%BAsica&O=1',3,'')
-    addDir ('Romance','http://tugaflix.com/Series?T=&G=Romance&O=1',3,'')
-    addDir ('Suspense','http://tugaflix.com/Series?T=&G=Suspense&O=1',3,'')
-    addDir ('Terror','http://tugaflix.com/Series?T=&G=Terror&O=1',3,'')
-    addDir ('Western','http://tugaflix.com/Series?T=&G=Western&O=1',3,'')
+    addDir ('Todas as Séries','http://tugaflix.org/Series',3,'http://www.ckfilms.com/wp-content/uploads/2013/09/clapper.png')
+    addDir ('Acção','http://tugaflix.org/Series?T=&G=Ac%C3%A7%C3%A3o&O=1',3,'')
+    addDir ('Animação','http://tugaflix.org/Series?T=&G=Anima%C3%A7%C3%A3o&O=1',3,'')
+    addDir ('Aventura','http://tugaflix.org/Series?T=&G=Aventura&O=1',3,'')
+    addDir ('Biografia','http://tugaflix.org/Series?T=&G=Biografia&O=1',3,'')
+    addDir ('Comédia','http://tugaflix.org/Series?T=&G=Com%C3%A9dia&O=1',3,'')
+    addDir ('Crime','http://tugaflix.org/Series?T=&G=Crime&O=Ad icionado',3,'')
+    addDir ('Desporto','http://tugaflix.org/Series?T=&G=Desporto&O=1',3,'')
+    addDir ('Documentário','http://tugaflix.org/Series?T=&G=Document%C3%A1rio&O=1',3,'')
+    addDir ('Drama','http://tugaflix.org/Series?T=&G=Drama&O=1',3,'')
+    addDir ('Familiar','http://tugaflix.org/Series?T=&G=Familiar&O=1',3,'')
+    addDir ('Fantasia','http://tugaflix.org/Series?T=&G=Fantasia&O=1',3,'')
+    addDir ('SciFi','http://tugaflix.org/Series?T=&G=Fic%C3%A7%C3%A3o&O=1',3,'')
+    addDir ('Guerra','http://tugaflix.org/Series?T=&G=Guerra&O=1',3,'')
+    addDir ('História','http://tugaflix.org/Series?T=&G=Hist%C3%B3ria&O=1',3,'')
+    addDir ('Mistério','http://tugaflix.org/Series?T=&G=Mist%C3%A9rio&O=1',3,'')
+    addDir ('Música','http://tugaflix.org/Series?T=&G=M%C3%BAsica&O=1',3,'')
+    addDir ('Romance','http://tugaflix.org/Series?T=&G=Romance&O=1',3,'')
+    addDir ('Suspense','http://tugaflix.org/Series?T=&G=Suspense&O=1',3,'')
+    addDir ('Terror','http://tugaflix.org/Series?T=&G=Terror&O=1',3,'')
+    addDir ('Western','http://tugaflix.org/Series?T=&G=Western&O=1',3,'')
 
 ###################################################################################
 #FUNCOES
@@ -108,11 +108,11 @@ def listar_filmes(url):
         codigo_fonte = abrir_url(url)
         match=re.compile('<div class="browse-movie-wrap col-xs-10 col-sm-4 col-md-5 col-lg-4"> <a href="(.+?)" class="browse-movie-link"> <figure> <img class="img-responsive" src="(.+?)" alt="(.+?)"> <figcaption class="hidden-xs hidden-sm"><i class=".+?"></i></span> <h4 class="rating">.+?</h4> <h6>.+?</h6> <span class="button-green-download-big">Ver Online</span> </figcaption> </figure> </a> <div class="browse-movie-bottom"> <a href=".+?" class="browse-movie-title">.+?</a> <div class="browse-movie-year">.+?</div> </div> </div>').findall(codigo_fonte)
         for url, img, titulo in match:
-            addDir(titulo,'http://tugaflix.com/'+ url,2,'http://tugaflix.com/'+img,False)
+            addDir(titulo,'http://tugaflix.org/'+ url,2,'http://tugaflix.org/'+img,False)
         match = re.compile('<ul class="tsc_pagination tsc_paginationA tsc_paginationA06">.+?<a href="(.+?)">Seguinte »</a></li></ul></div>').findall(codigo_fonte)
         for next_page in match:
             addLink('','','',0,'')
-            addDir('Proximo >>','http://tugaflix.com/'+ next_page,1,'')
+            addDir('Proximo >>','http://tugaflix.org/'+ next_page,1,'')
 
 def listar_series(url):
         codigo_fonte = abrir_url(url)
@@ -120,17 +120,17 @@ def listar_series(url):
         #match=re.compile('<a href="(.+?)" class="browse-movie-link"> <figure> <img class="img-responsive" src="(.+?)" alt="(.+?)"> <figcaption class="hidden-xs hidden-sm"><i class=".+?"></i></span> <h4 class="rating">.+?</h4> <h6>.+?</h6> <span class="button-green-download-big">Ver Online</span> </figcaption> </figure> </a> <div class="browse-movie-bottom"> <a href=".+?" class="browse-movie-title">.+?</a> <div class="browse-movie-year">.+?</div> </div> </div><div class="browse-movie-wrap col-xs-10 col-sm-4 col-md-5 col-lg-4">').findall(codigo_fonte)
         match=re.compile('<div class="browse-movie-wrap col-xs-10 col-sm-4 col-md-5 col-lg-4"> <a href="(.+?)" class="browse-movie-link"> <figure> <img class="img-responsive" src="(.+?)" alt="(.+?)"> <figcaption class="hidden-xs hidden-sm"><i class=".+?"></i></span> <h4 class="rating">.+?</h4> <h6>.+?</h6> <span class="button-green-download-big">Ver Online</span> </figcaption> </figure> </a> <div class="browse-movie-bottom"> <a href=".+?" class="browse-movie-title">.+?</a> <div class="browse-movie-year">.+?</div> </div> </div>').findall(codigo_fonte)
         for url, img, titulo in match:
-            addDir(titulo,'http://tugaflix.com/'+ url,4,'http://tugaflix.com/'+img,True)
+            addDir(titulo,'http://tugaflix.org/'+ url,4,'http://tugaflix.org/'+img,True)
         match = re.compile('<ul class="tsc_pagination tsc_paginationA tsc_paginationA06">.+?<a href="(.+?)">Seguinte »</a></li></ul></div>').findall(codigo_fonte)
         for next_page in match:
             addLink('','','',0,'')
-            addDir('Proximo >>','http://tugaflix.com/'+ next_page,1,'')
+            addDir('Proximo >>','http://tugaflix.org/'+ next_page,1,'')
 
 def listar_episodios(url):
         codigo_fonte = abrir_url(url)
         match=re.compile('<a class="browse-movie-link" href="(.+?)"><figure><img class="img-responsiveeps" src="(.+?)"><figcaptioneps><h4 class="grelhaeps1">(.+?)</h4><h6 class="grelhaeps2">.+?</h6></figcaptioneps></figure></a>').findall(codigo_fonte)
         for url,img, titulo in match:
-            addDir(titulo,'http://tugaflix.com'+ url,2,'http://tugaflix.com/'+img,False)
+            addDir(titulo,'http://tugaflix.org'+ url,2,'http://tugaflix.org/'+img,False)
 
 def encontrar_fontes(url):
     codigo_fonte=abrir_url(url)
@@ -142,7 +142,7 @@ def encontrar_fontes(url):
     for legenda in match:
         print 'vamos la ver:' + ficheiro
         final = 'http://filehoot.com/vidembed-'+ficheiro+'.mp4'
-        legenda = 'http://tugaflix.com/'+legenda
+        legenda = 'http://tugaflix.org/'+legenda
         abrir_video(final,legenda)
 	
 
@@ -152,7 +152,7 @@ def pesquisa_filmes():
     if (keyb.isConfirmed()):
         search = keyb.getText()
         parametro_pesquisa=urllib.quote(search)
-    url = 'http://tugaflix.com/Filmes?T='+str(parametro_pesquisa)+'&G=&O=1'
+    url = 'http://tugaflix.org/Filmes?T='+str(parametro_pesquisa)+'&G=&O=1'
     listar_filmes(url)
     
 def pesquisa_series():
@@ -161,7 +161,7 @@ def pesquisa_series():
     if (keyb.isConfirmed()):
         search = keyb.getText()
         parametro_pesquisa=urllib.quote(search)
-    url = 'http://tugaflix.com/Series?T='+str(parametro_pesquisa)+'&G=&O=1'
+    url = 'http://tugaflix.org/Series?T='+str(parametro_pesquisa)+'&G=&O=1'
     listar_series(url)
 
 
